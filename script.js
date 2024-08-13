@@ -920,12 +920,13 @@ function displaySoupOfTheDay() {
     const today = new Date().toISOString().slice(0, 10);
     let soupOfTheDay = JSON.parse(localStorage.getItem('soupOfTheDay'));
 
+    // Check if there's no Soup of the Day or if the stored date isn't today
     if (!soupOfTheDay || soupOfTheDay.date !== today) {
         const controls = Object.keys(controlsData);
         const randomControl = controls[Math.floor(Math.random() * controls.length)];
         soupOfTheDay = {
             date: today,
-            subcategory: controlsData[randomControl].subcategory,
+            subcategory: randomControl,
             metaphor: controlsData[randomControl].metaphor,
             translation: controlsData[randomControl].translation
         };
