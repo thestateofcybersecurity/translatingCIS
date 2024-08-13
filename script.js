@@ -921,13 +921,13 @@ function displaySoupOfTheDay() {
     let soupOfTheDay = JSON.parse(localStorage.getItem('soupOfTheDay'));
 
     if (!soupOfTheDay || soupOfTheDay.date !== today) {
-        const controls = controlsData;
+        const controls = Object.keys(controlsData);
         const randomControl = controls[Math.floor(Math.random() * controls.length)];
         soupOfTheDay = {
             date: today,
-            subcategory: randomControl.subcategory,
-            metaphor: randomControl.metaphor,
-            translation: randomControl.translation
+            subcategory: controlsData[randomControl].subcategory,
+            metaphor: controlsData[randomControl].metaphor,
+            translation: controlsData[randomControl].translation
         };
         localStorage.setItem('soupOfTheDay', JSON.stringify(soupOfTheDay));
     }
