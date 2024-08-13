@@ -926,7 +926,7 @@ function displaySoupOfTheDay() {
         const randomControl = controls[Math.floor(Math.random() * controls.length)];
         soupOfTheDay = {
             date: today,
-            subcategory: randomControl,
+            subcategory: controlsData[randomControl].subcategory,
             metaphor: controlsData[randomControl].metaphor,
             translation: controlsData[randomControl].translation
         };
@@ -934,7 +934,7 @@ function displaySoupOfTheDay() {
     }
 
     const soupControl = document.getElementById('soupControl');
-    
+
     // Clear any previous content
     soupControl.textContent = '';
 
@@ -943,9 +943,17 @@ function displaySoupOfTheDay() {
     strongElement.textContent = soupOfTheDay.subcategory;
     soupControl.appendChild(strongElement);
 
-    const textNode = document.createTextNode(`: ${soupOfTheDay.metaphor}`);
-    soupControl.appendChild(textNode);
+    // Display the metaphor
+    const metaphorElement = document.createElement('p');
+    metaphorElement.textContent = `Metaphor: ${soupOfTheDay.metaphor}`;
+    soupControl.appendChild(metaphorElement);
+
+    // Display the translation
+    const translationElement = document.createElement('p');
+    translationElement.textContent = `Translation: ${soupOfTheDay.translation}`;
+    soupControl.appendChild(translationElement);
 }
+
 
 // Load the controls data when the page loads
 window.onload = displaySoupOfTheDay;
