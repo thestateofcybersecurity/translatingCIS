@@ -932,18 +932,18 @@ function displaySoupOfTheDay() {
         localStorage.setItem('soupOfTheDay', JSON.stringify(soupOfTheDay));
     }
 
-    const soupAcronym = document.getElementById('soupAcronym');
+    const soupControl = document.getElementById('soupControl');
     
     // Clear any previous content
-    soupAcronym.textContent = '';
+    soupControl.textContent = '';
 
     // Create the elements safely
     const strongElement = document.createElement('strong');
     strongElement.textContent = soupOfTheDay.subcategory;
-    soupAcronym.appendChild(strongElement);
+    soupControl.appendChild(strongElement);
 
     const textNode = document.createTextNode(`: ${soupOfTheDay.metaphor}`);
-    soupAcronym.appendChild(textNode);
+    soupControl.appendChild(textNode);
 }
 
 // Load the controls data when the page loads
