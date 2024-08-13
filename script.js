@@ -1,531 +1,767 @@
 // Embed the JSON data directly into the script
 const controlsData = [
     {
-        "subcategory": "GV.OC-01: The organizational mission is understood and informs cybersecurity risk management.",
-        "metaphor": "Understanding the purpose of your family and using it to guide decisions.",
-        "translation": "The family knows what’s important to them and uses that to decide how they should handle risks and challenges."
+        "subcategory": "1.1: Establish and Maintain Detailed Enterprise Asset Inventory",
+        "metaphor": "Keeping a detailed list of all your household appliances, so you know what you have and can maintain them properly.",
+        "translation": "The family keeps an up-to-date inventory of all the devices and appliances they own, ensuring everything is accounted for and can be maintained effectively."
     },
     {
-        "subcategory": "GV.OC-02: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered.",
-        "metaphor": "Considering the needs of everyone in the household when making safety plans.",
-        "translation": "The family understands what each member needs to feel safe and considers these needs when making decisions."
+        "subcategory": "1.2: Address Unauthorized Assets",
+        "metaphor": "Removing any uninvited guests from your home to maintain security.",
+        "translation": "The family ensures that any unauthorized or unknown devices are promptly removed or blocked from the home’s network to keep it secure."
     },
     {
-        "subcategory": "GV.OC-03: Legal, regulatory, and contractual requirements regarding cybersecurity - including privacy and civil liberties obligations - are understood and managed.",
-        "metaphor": "Keeping track of legal requirements, like having a smoke detector in the house.",
-        "translation": "The family ensures they are following all the necessary rules and regulations to stay safe and compliant."
+        "subcategory": "1.3: Utilize an Active Discovery Tool",
+        "metaphor": "Regularly walking around your house to check if all doors and windows are secure.",
+        "translation": "The family actively checks the home network daily to identify any new or unauthorized devices connected, ensuring everything is secure."
     },
     {
-        "subcategory": "GV.OC-04: Critical objectives, capabilities, and services that external stakeholders depend on or expect from the organization are understood and communicated.",
-        "metaphor": "Making sure that the house’s main functions, like electricity and water, are reliable and well-maintained.",
-        "translation": "The family ensures that critical systems and services are dependable and meet the expectations of everyone living in the house."
+        "subcategory": "1.4: Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory",
+        "metaphor": "Using your home's visitor log to update your list of guests regularly.",
+        "translation": "The family uses logs of who’s connected to the home’s network to update their inventory of devices, ensuring it’s always current."
     },
     {
-        "subcategory": "GV.OC-05: Outcomes, capabilities, and services that the organization depends on are understood and communicated.",
-        "metaphor": "Understanding which household services and functions are essential for everyday living.",
-        "translation": "The family knows what services and systems they rely on most and ensures they are properly maintained and functioning."
+        "subcategory": "1.5: Use a Passive Asset Discovery Tool",
+        "metaphor": "Keeping an ear out for unusual noises in the house to detect if someone is there without your knowledge.",
+        "translation": "The family uses passive tools to listen for any new or unauthorized devices on the network, updating their records at least weekly."
     },
     {
-        "subcategory": "GV.RM-01: Risk management objectives are established and agreed to by organizational stakeholders.",
-        "metaphor": "Setting household budgets based on family priorities.",
-        "translation": "The family decides what’s most important to spend money on, ensuring that the budget aligns with these goals."
+        "subcategory": "2.1: Establish and Maintain a Software Inventory",
+        "metaphor": "Making a list of all the apps and programs installed on your family’s devices, so you know what’s there and why.",
+        "translation": "The family keeps a detailed inventory of all software on their devices, knowing what’s installed, when, and for what purpose."
     },
     {
-        "subcategory": "GV.RM-02: Risk appetite and risk tolerance statements are established, communicated, and maintained.",
-        "metaphor": "Agreeing on household rules for safety.",
-        "translation": "The family agrees on how much risk they are willing to take, like when children can play outside alone, and everyone follows these rules."
+        "subcategory": "2.2: Ensure Authorized Software is Currently Supported",
+        "metaphor": "Making sure all your household appliances are still under warranty and supported by the manufacturer.",
+        "translation": "The family ensures that all the software they use is still supported and up-to-date, removing or documenting exceptions for anything outdated."
     },
     {
-        "subcategory": "GV.RM-03: Cybersecurity risk management activities and outcomes are included in enterprise risk management processes.",
-        "metaphor": "Planning home renovations to match long-term family plans.",
-        "translation": "Any updates to the house, like adding an extra room, align with the family’s future plans, such as growing the family or hosting more visitors."
+        "subcategory": "2.3: Address Unauthorized Software",
+        "metaphor": "Getting rid of any unwanted or unapproved apps that kids might have installed on the family computer.",
+        "translation": "The family ensures that any unauthorized software is promptly removed or properly documented if it must be kept."
     },
     {
-        "subcategory": "GV.RM-04: Strategic direction that describes appropriate risk response options is established and communicated.",
-        "metaphor": "Setting boundaries for safe areas in the home.",
-        "translation": "The family defines and communicates where it’s safe to play or work, like keeping certain tools in the garage and not in the living room."
+        "subcategory": "2.4: Utilize Automated Software Inventory Tools",
+        "metaphor": "Using a tool to automatically list all the apps installed on your family’s devices.",
+        "translation": "The family uses automated tools to keep track of all software installed across their devices, ensuring the inventory is always accurate."
     },
     {
-        "subcategory": "GV.RM-05: Lines of communication across the organization are established for cybersecurity risks, including risks from suppliers and other third parties.",
-        "metaphor": "Setting up a family chat group for emergencies.",
-        "translation": "The family knows how to quickly and effectively communicate with each other if something goes wrong, like using a group chat to stay in touch during a storm."
+        "subcategory": "2.5: Allowlist Authorized Software",
+        "metaphor": "Only allowing pre-approved people into your home.",
+        "translation": "The family ensures that only pre-approved software is allowed to run on their devices, blocking anything unauthorized."
     },
     {
-        "subcategory": "GV.RM-06: A standardized method for calculating, documenting, categorizing, and prioritizing cybersecurity risks is established and communicated.",
-        "metaphor": "Using a checklist for home safety inspections.",
-        "translation": "The family regularly checks off items on a list to ensure the home remains safe, using the same list every time to make sure nothing is missed."
+        "subcategory": "2.6: Allowlist Authorized Libraries",
+        "metaphor": "Allowing only approved books in the family library.",
+        "translation": "The family ensures that only authorized software libraries are allowed to be used on their devices, blocking any that are unauthorized."
     },
     {
-        "subcategory": "GV.RM-07: Strategic opportunities (i.e., positive risks) are characterized and are included in organizational cybersecurity risk discussions.",
-        "metaphor": "Deciding whether to invest in home improvements.",
-        "translation": "The family weighs the benefits of making improvements to the house, like adding solar panels, to decide if the potential benefits are worth the cost."
+        "subcategory": "2.7: Allowlist Authorized Scripts",
+        "metaphor": "Allowing only trusted recipes in the family cookbook.",
+        "translation": "The family ensures that only authorized scripts are allowed to run on their devices, blocking any unauthorized ones."
     },
     {
-        "subcategory": "GV.RR-01: Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving.",
-        "metaphor": "Parents ensuring safety rules are followed at home.",
-        "translation": "The parents ensure that everyone in the house follows the safety rules, integrating these into everyday routines."
+        "subcategory": "3.1: Establish and Maintain a Data Management Process",
+        "metaphor": "Creating a system for organizing and handling important family documents.",
+        "translation": "The family establishes a process for managing their data, including who owns it, how it’s handled, and how long it’s kept."
     },
     {
-        "subcategory": "GV.RR-02: Roles, responsibilities, and authorities related to cybersecurity risk management are established, communicated, understood, and enforced.",
-        "metaphor": "Assigning chores and responsibilities at home.",
-        "translation": "Everyone in the family knows what chores they are responsible for, and who to go to if they need help."
+        "subcategory": "3.2: Establish and Maintain a Data Inventory",
+        "metaphor": "Keeping a detailed list of all important documents in the house.",
+        "translation": "The family keeps an inventory of all sensitive and important data they possess, ensuring it’s updated regularly."
     },
     {
-        "subcategory": "GV.RR-03: Adequate resources are allocated commensurate with the cybersecurity risk strategy, roles, responsibilities, and policies.",
-        "metaphor": "Setting aside money to buy safety tools like smoke detectors.",
-        "translation": "The family allocates resources to make sure they can afford important safety tools and services."
+        "subcategory": "3.3: Configure Data Access Control Lists",
+        "metaphor": "Setting rules about who can access which rooms in the house.",
+        "translation": "The family sets access controls to ensure that only those who need to access certain data can do so."
     },
     {
-        "subcategory": "GV.RR-04: Cybersecurity is included in human resources practices.",
-        "metaphor": "Including safety guidelines in the household rules.",
-        "translation": "The family integrates safety practices into their everyday activities, ensuring everyone knows what to do to stay safe."
+        "subcategory": "3.4: Enforce Data Retention",
+        "metaphor": "Keeping important documents for a set number of years before safely discarding them.",
+        "translation": "The family enforces data retention policies to ensure data is kept for the required amount of time and then properly disposed of."
     },
     {
-        "subcategory": "GV.PO-01: Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced.",
-        "metaphor": "Setting house rules for safety.",
-        "translation": "The family establishes and communicates safety rules, like locking doors at night, that everyone agrees to follow."
+        "subcategory": "3.5: Securely Dispose of Data",
+        "metaphor": "Shredding old documents that are no longer needed.",
+        "translation": "The family securely disposes of data when it’s no longer needed, ensuring it’s done in a way that prevents any unauthorized access."
     },
     {
-        "subcategory": "GV.PO-02: Policy for managing cybersecurity risks is reviewed, updated, communicated, and enforced to reflect changes in requirements, threats, technology, and organizational mission.",
-        "metaphor": "Updating house rules as the family grows.",
-        "translation": "The family reviews and updates the house safety rules as new situations arise, like when a baby starts crawling, to keep everyone safe."
+        "subcategory": "3.6: Encrypt Data on End-User Devices",
+        "metaphor": "Locking important documents in a safe.",
+        "translation": "The family ensures that sensitive data on their devices is encrypted, so it’s secure even if the device is lost or stolen."
     },
     {
-        "subcategory": "GV.OV-01: Cybersecurity risk management strategy outcomes are reviewed to inform and adjust strategy and direction.",
-        "metaphor": "Reviewing the effectiveness of your home security system.",
-        "translation": "The family regularly checks if the security measures they put in place are working and makes adjustments if necessary."
+        "subcategory": "3.7: Establish and Maintain a Data Classification Scheme",
+        "metaphor": "Labeling documents as 'Sensitive,' 'Confidential,' or 'Public' based on their importance.",
+        "translation": "The family classifies their data according to its sensitivity, ensuring it’s handled appropriately based on its classification."
     },
     {
-        "subcategory": "GV.OV-02: The cybersecurity risk management strategy is reviewed and adjusted to ensure coverage of organizational requirements and risks.",
-        "metaphor": "Adjusting your home security plan based on new threats.",
-        "translation": "The family updates their security plan, like installing new locks after a neighbor’s break-in, to address any new risks."
+        "subcategory": "3.8: Document Data Flows",
+        "metaphor": "Mapping out how information moves through the house, like how mail gets from the mailbox to the right person.",
+        "translation": "The family documents how data flows through their systems, ensuring they understand where data is stored, processed, and transmitted."
     },
     {
-        "subcategory": "GV.OV-03: Organizational cybersecurity risk management performance is evaluated and reviewed for adjustments needed.",
-        "metaphor": "Checking if your home safety rules are being followed.",
-        "translation": "The family periodically reviews how well everyone is following the safety rules and makes changes if they see issues."
+        "subcategory": "3.9: Encrypt Data on Removable Media",
+        "metaphor": "Locking important documents in a briefcase before taking them out of the house.",
+        "translation": "The family encrypts data on any removable media, such as USB drives, to protect it if the media is lost or stolen."
     },
     {
-        "subcategory": "GV.SC-01: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders.",
-        "metaphor": "Setting up a list of trusted service providers for home repairs.",
-        "translation": "The family agrees on which service providers to trust for repairs and maintenance to ensure the home is well taken care of."
+        "subcategory": "3.10: Encrypt Sensitive Data in Transit",
+        "metaphor": "Using a locked box to send sensitive documents through the mail.",
+        "translation": "The family ensures that sensitive data is encrypted while it’s being transmitted, protecting it from interception."
     },
     {
-        "subcategory": "GV.SC-02: Cybersecurity roles and responsibilities for suppliers, customers, and partners are established, communicated, and coordinated internally and externally.",
-        "metaphor": "Assigning chores and responsibilities for home upkeep.",
-        "translation": "The family clearly defines who is responsible for different tasks, like mowing the lawn or cleaning the gutters, and communicates this to everyone involved."
+        "subcategory": "3.11: Encrypt Sensitive Data at Rest",
+        "metaphor": "Locking up important documents in a secure filing cabinet when they’re not being used.",
+        "translation": "The family ensures that sensitive data stored on devices is encrypted, keeping it secure even when not in use."
     },
     {
-        "subcategory": "GV.SC-03: Cybersecurity supply chain risk management is integrated into cybersecurity and enterprise risk management, risk assessment, and improvement processes.",
-        "metaphor": "Including service provider reviews in your regular home maintenance checks.",
-        "translation": "The family makes sure that checking on the reliability of service providers is part of their regular home maintenance routine."
+        "subcategory": "3.12: Segment Data Processing and Storage Based on Sensitivity",
+        "metaphor": "Keeping valuable items in a separate, secure area of the house.",
+        "translation": "The family separates the processing and storage of sensitive data from less critical data, ensuring it’s more secure."
     },
-{
-        "subcategory": "GV.SC-05: Requirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contracts and other types of agreements with suppliers and other relevant third parties.",
-        "metaphor": "Setting expectations with a contractor before starting home renovations.",
-        "translation": "The family agrees on what they expect from a contractor before work begins, like making sure they follow safety protocols."
+    {
+        "subcategory": "3.13: Deploy a Data Loss Prevention Solution",
+        "metaphor": "Using a security system to monitor for anything valuable leaving the house without permission.",
+        "translation": "The family uses tools to monitor and prevent the unauthorized transfer of sensitive data out of their systems."
+    },
+    {
+        "subcategory": "3.14: Log Sensitive Data Access",
+        "metaphor": "Keeping a log of who accessed the family safe and when.",
+        "translation": "The family logs every time sensitive data is accessed, ensuring they have a record of who accessed what and when."
+    },
+    {
+        "subcategory": "4.1: Establish and Maintain a Secure Configuration Process",
+        "metaphor": "Setting rules for how to organize and secure the house, like where keys are kept and how doors are locked.",
+        "translation": "The family establishes and maintains a process to ensure all devices and software are securely configured and kept up to date."
+    },
+    {
+        "subcategory": "4.2: Establish and Maintain a Secure Configuration Process for Network Infrastructure",
+        "metaphor": "Ensuring that the home’s internet and Wi-Fi are set up securely, with strong passwords and proper settings.",
+        "translation": "The family sets and maintains secure configurations for all network devices, ensuring everything is protected from potential threats."
+    },
+    {
+        "subcategory": "4.3: Configure Automatic Session Locking on Enterprise Assets",
+        "metaphor": "Setting a timer to automatically lock the front door if it’s left open for too long.",
+        "translation": "The family configures devices to automatically lock after a set period of inactivity, ensuring they’re secure even if someone forgets to lock them manually."
+    },
+    {
+        "subcategory": "4.4: Implement and Manage a Firewall on Servers",
+        "metaphor": "Building a fence around the house to keep out unwanted visitors.",
+        "translation": "The family installs and manages a firewall on their servers to block unauthorized access and protect their systems from outside threats."
+    },
+    {
+        "subcategory": "4.5: Implement and Manage a Firewall on End-User Devices",
+        "metaphor": "Putting locks on all the doors and windows of the house.",
+        "translation": "The family ensures that all personal devices have a firewall in place, blocking any unauthorized connections and keeping their data safe."
+    },
+    {
+        "subcategory": "4.6: Securely Manage Enterprise Assets and Software",
+        "metaphor": "Using a strong password to lock the main door of your house and only giving the key to trusted people.",
+        "translation": "The family manages all their devices and software securely, using strong access controls and only allowing trusted individuals to make changes."
+    },
+    {
+        "subcategory": "4.7: Manage Default Accounts on Enterprise Assets and Software",
+        "metaphor": "Changing the default lock on the front door after moving into a new house.",
+        "translation": "The family changes the default accounts and settings on all devices and software, ensuring they’re not vulnerable to attacks using default credentials."
+    },
+    {
+        "subcategory": "4.8: Uninstall or Disable Unnecessary Services on Enterprise Assets and Software",
+        "metaphor": "Turning off unused appliances in the house to save energy and prevent fire hazards.",
+        "translation": "The family disables or uninstalls any unnecessary services on their devices and software to reduce potential vulnerabilities and improve security."
+    },
+    {
+        "subcategory": "4.9: Configure Trusted DNS Servers on Enterprise Assets",
+        "metaphor": "Using a trusted postal service to deliver important letters.",
+        "translation": "The family configures their devices to use trusted DNS servers, ensuring their internet traffic is directed safely and reliably."
+    },
+    {
+        "subcategory": "4.10: Enforce Automatic Device Lockout on Portable End-User Devices",
+        "metaphor": "Automatically locking the car doors if someone tries to force them open too many times.",
+        "translation": "The family configures their portable devices to automatically lock after a set number of failed login attempts, protecting them from unauthorized access."
+    },
+    {
+        "subcategory": "4.11: Enforce Remote Wipe Capability on Portable End-User Devices",
+        "metaphor": "Having the ability to erase all personal information from your phone if it gets lost or stolen.",
+        "translation": "The family ensures they can remotely wipe data from their devices if they are lost or stolen, protecting sensitive information from being accessed."
+    },
+    {
+        "subcategory": "4.12: Separate Enterprise Workspaces on Mobile End-User Devices",
+        "metaphor": "Using a separate room in the house for work, keeping it distinct from personal spaces.",
+        "translation": "The family separates work-related data and applications from personal ones on their mobile devices, ensuring that sensitive work information is kept secure and separate from personal use."
+    },
+    {
+        "subcategory": "5.1: Establish and Maintain an Inventory of Accounts",
+        "metaphor": "Keeping a list of everyone who has a key to your house.",
+        "translation": "The family maintains a detailed inventory of all user and administrator accounts, ensuring they know exactly who has access to their systems and data."
+    },
+    {
+        "subcategory": "5.2: Use Unique Passwords",
+        "metaphor": "Using different keys for different doors in your house.",
+        "translation": "The family uses unique passwords for all accounts to ensure that if one key (password) is compromised, it doesn’t unlock every door (account)."
+    },
+    {
+        "subcategory": "5.3: Disable Dormant Accounts",
+        "metaphor": "Changing the locks on the house after someone moves out.",
+        "translation": "The family disables or deletes any accounts that are no longer in use, reducing the risk of unauthorized access."
+    },
+    {
+        "subcategory": "5.4: Restrict Administrator Privileges to Dedicated Administrator Accounts",
+        "metaphor": "Only giving the master key to trusted family members and not using it for everyday tasks.",
+        "translation": "The family restricts administrator privileges to specific accounts used only for critical tasks, ensuring these high-level permissions aren’t used unnecessarily."
+    },
+    {
+        "subcategory": "5.5: Establish and Maintain an Inventory of Service Accounts",
+        "metaphor": "Keeping a list of all service providers who have access to your home for maintenance.",
+        "translation": "The family maintains an inventory of service accounts, including details about who manages them and their purpose, ensuring that all accounts are authorized and monitored."
+    },
+    {
+        "subcategory": "5.6: Centralize Account Management",
+        "metaphor": "Managing all household keys from a single secure location.",
+        "translation": "The family centralizes the management of all accounts, using a directory or identity service, to ensure consistent control and oversight."
+    },
+    {
+        "subcategory": "6.1: Establish an Access Granting Process",
+        "metaphor": "Creating a checklist before giving someone a key to your house.",
+        "translation": "The family establishes a clear process for granting access to their home (enterprise assets) when a new member joins or their role changes, ensuring that only authorized individuals receive access."
+    },
+    {
+        "subcategory": "6.2: Establish an Access Revoking Process",
+        "metaphor": "Taking back the key when someone moves out.",
+        "translation": "The family ensures that access is revoked immediately when someone no longer needs it, such as when they leave the household or change roles, to maintain security."
+    },
+    {
+        "subcategory": "6.3: Require MFA for Externally-Exposed Applications",
+        "metaphor": "Using a second lock on the front door for added security.",
+        "translation": "The family requires a second layer of protection (MFA) for accessing applications that can be reached from outside the home, ensuring extra security against unauthorized access."
+    },
+    {
+        "subcategory": "6.4: Require MFA for Remote Network Access",
+        "metaphor": "Making sure the doorbell has a camera before letting someone in remotely.",
+        "translation": "The family ensures that anyone trying to access the home network remotely must verify their identity through a second method (MFA) to prevent unauthorized entry."
+    },
+    {
+        "subcategory": "6.5: Require MFA for Administrative Access",
+        "metaphor": "Using a master key that requires both a key and a code to open the safe.",
+        "translation": "The family requires multi-factor authentication for accounts with administrative privileges, adding an extra layer of security for the most critical access points."
     },
     {
-        "subcategory": "GV.SC-06: Planning and due diligence are performed to reduce risks before entering into formal supplier or other third-party relationships.",
-        "metaphor": "Researching a contractor before hiring them.",
-        "translation": "The family checks references and reviews before hiring someone to work on the house, ensuring they’re trustworthy."
+        "subcategory": "6.6: Establish and Maintain an Inventory of Authentication and Authorization Systems",
+        "metaphor": "Keeping a list of all locks and security systems in the house.",
+        "translation": "The family maintains an inventory of all systems that manage access to the home, ensuring they are kept up-to-date and reviewed regularly."
     },
     {
-        "subcategory": "GV.SC-07: The risks posed by a supplier, their products and services, and other third parties are understood, recorded, prioritized, assessed, responded to, and monitored over the course of the relationship.",
-        "metaphor": "Keeping track of how well a contractor performs during a home renovation.",
-        "translation": "The family monitors the contractor’s work and addresses any issues that come up, making sure everything is done to their standards."
+        "subcategory": "6.7: Centralize Access Control",
+        "metaphor": "Controlling all locks in the house from a central security panel.",
+        "translation": "The family centralizes control of all access to their home, using a single system to manage who can enter and what they can access."
     },
     {
-        "subcategory": "GV.SC-08: Relevant suppliers and other third parties are included in incident planning, response, and recovery activities.",
-        "metaphor": "Having a repair crew on standby during a big home project.",
-        "translation": "The family coordinates with service providers so they’re ready to help quickly if something goes wrong during a major renovation."
+        "subcategory": "6.8: Define and Maintain Role-Based Access Control",
+        "metaphor": "Deciding which family members get keys to different rooms based on their responsibilities.",
+        "translation": "The family defines and regularly reviews who needs access to what in the home, ensuring that everyone only has the access necessary for their role."
     },
     {
-        "subcategory": "GV.SC-09: Supply chain security practices are integrated into cybersecurity and enterprise risk management programs, and their performance is monitored throughout the technology product and service life cycle.",
-        "metaphor": "Regularly checking on the quality of materials used in home repairs.",
-        "translation": "The family ensures that the materials and products used in the house meet their standards and perform well over time."
+        "subcategory": "7.1: Establish and Maintain a Vulnerability Management Process",
+        "metaphor": "Regularly checking your home for cracks in the foundation.",
+        "translation": "The family establishes and maintains a routine process for identifying and addressing weaknesses in their home (enterprise assets), ensuring that any potential vulnerabilities are promptly detected and fixed."
     },
     {
-        "subcategory": "GV.SC-10: Cybersecurity supply chain risk management plans include provisions for activities that occur after the conclusion of a partnership or service agreement.",
-        "metaphor": "Reviewing a contractor’s work even after the job is done.",
-        "translation": "The family makes sure that everything is still in good condition and that there are no issues, even after the contractor has finished their work."
+        "subcategory": "7.2: Establish and Maintain a Remediation Process",
+        "metaphor": "Having a plan to fix cracks in the foundation as soon as they’re found.",
+        "translation": "The family sets up a strategy to prioritize and address identified weaknesses in their home, making sure repairs are done quickly and effectively."
     },
     {
-        "subcategory": "ID.AM-01: Inventories of hardware managed by the organization are maintained.",
-        "metaphor": "Keeping a list of all your household appliances.",
-        "translation": "The family keeps an up-to-date list of all the appliances they own, like the refrigerator, washing machine, and microwave, so they know what they have and can maintain them properly."
+        "subcategory": "7.3: Perform Automated Operating System Patch Management",
+        "metaphor": "Automatically updating your home’s security system whenever new features are available.",
+        "translation": "The family ensures their home’s security (operating system) is always up to date by automating the process of applying important updates and patches."
     },
     {
-        "subcategory": "ID.AM-02: Inventories of software, services, and systems managed by the organization are maintained.",
-        "metaphor": "Tracking all the apps and subscriptions your family uses.",
-        "translation": "The family maintains a list of all the apps and services they use, like streaming services and home security systems, to keep track of their subscriptions and ensure everything is functioning as expected."
+        "subcategory": "7.4: Perform Automated Application Patch Management",
+        "metaphor": "Automatically updating all the appliances in your home to ensure they’re running safely.",
+        "translation": "The family keeps all their household devices and appliances up to date by automating the installation of updates and patches, ensuring everything functions safely and efficiently."
     },
     {
-        "subcategory": "ID.AM-03: Representations of the organization's authorized network communication and internal and external network data flows are maintained.",
-        "metaphor": "Drawing a map of your home’s plumbing and electrical systems.",
-        "translation": "The family has a map that shows where all the pipes and wires run in their home, so they know how everything is connected and can troubleshoot problems if they arise."
+        "subcategory": "7.5: Perform Automated Vulnerability Scans of Internal Enterprise Assets",
+        "metaphor": "Regularly inspecting the inside of your home to catch any hidden issues.",
+        "translation": "The family regularly scans the inside of their home (internal enterprise assets) to identify any vulnerabilities that might not be immediately visible, ensuring any problems are caught early."
     },
     {
-        "subcategory": "ID.AM-04: Inventories of services provided by suppliers are maintained.",
-        "metaphor": "Listing all the service providers you rely on, like the plumber, electrician, and gardener.",
-        "translation": "The family keeps a list of all the service providers they use, so they know who to call when they need help with something in the house."
+        "subcategory": "7.6: Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets",
+        "metaphor": "Checking the exterior of your home for any signs of damage or wear.",
+        "translation": "The family regularly inspects the outside of their home (externally-exposed assets) to identify any vulnerabilities that could be exploited from the outside, ensuring the home remains secure."
     },
     {
-        "subcategory": "ID.AM-05: Assets are prioritized based on classification, criticality, resources, and impact on the mission.",
-        "metaphor": "Prioritizing which home repairs to tackle first based on their importance.",
-        "translation": "The family decides which repairs to address first, like fixing a leaking roof before painting a room, based on what’s most critical to the home’s safety and functionality."
+        "subcategory": "7.7: Remediate Detected Vulnerabilities",
+        "metaphor": "Fixing any cracks or issues found during your home inspections.",
+        "translation": "The family takes immediate action to repair any vulnerabilities found during inspections, ensuring their home remains safe and secure."
     },
     {
-        "subcategory": "ID.AM-07: Inventories of data and corresponding metadata for designated data types are maintained.",
-        "metaphor": "Cataloging all your family photos and important documents.",
-        "translation": "The family keeps track of where all their important documents and photos are stored, so they can easily find them when needed."
+        "subcategory": "8.1: Establish and Maintain an Audit Log Management Process",
+        "metaphor": "Keeping a detailed diary of daily activities in your home.",
+        "translation": "The family establishes a process for recording and reviewing important events and activities in their home (audit logs), ensuring they can track and understand what has happened over time."
     },
     {
-        "subcategory": "ID.AM-08: Systems, hardware, software, services, and data are managed throughout their life cycles.",
-        "metaphor": "Regularly servicing your car and replacing it when it gets too old.",
-        "translation": "The family ensures that all their appliances, cars, and other important items are maintained and replaced when they are no longer reliable."
+        "subcategory": "8.2: Collect Audit Logs",
+        "metaphor": "Recording everything that happens in the house to catch any unusual activity.",
+        "translation": "The family collects detailed records of daily activities and events in their home (audit logs) to monitor for any suspicious or unexpected occurrences."
     },
-     {
-        "subcategory": "ID.RA-01: Vulnerabilities in assets are identified, validated, and recorded.",
-        "metaphor": "Checking your home for any potential safety hazards.",
-        "translation": "The family regularly inspects the house for any issues, like loose floorboards or faulty wiring, and keeps a record of what needs to be fixed."
+    {
+        "subcategory": "8.3: Ensure Adequate Audit Log Storage",
+        "metaphor": "Keeping enough storage space in your home diary to record all important events.",
+        "translation": "The family ensures they have sufficient space to store all their recorded activities and events (audit logs) over time."
+    },
+    {
+        "subcategory": "8.4: Standardize Time Synchronization",
+        "metaphor": "Making sure all the clocks in your home show the same time.",
+        "translation": "The family standardizes timekeeping across all devices in their home (enterprise assets) to ensure all recorded events (audit logs) are accurately time-stamped and synchronized."
+    },
+    {
+        "subcategory": "8.5: Collect Detailed Audit Logs",
+        "metaphor": "Writing down everything that happens in your home, including who did what and when.",
+        "translation": "The family collects detailed records of all important activities and events (audit logs), including who was involved and when they occurred, to help with any future investigations."
+    },
+    {
+        "subcategory": "8.6: Collect DNS Query Audit Logs",
+        "metaphor": "Keeping track of every time someone in your house looks up information online.",
+        "translation": "The family records every online search or lookup (DNS queries) made from their home to monitor and review any potentially risky behavior."
+    },
+    {
+        "subcategory": "8.7: Collect URL Request Audit Logs",
+        "metaphor": "Recording every website visited by anyone in your house.",
+        "translation": "The family keeps a log of all websites accessed from their home, allowing them to monitor and review online activity for any potential security risks."
+    },
+    {
+        "subcategory": "8.8: Collect Command-Line Audit Logs",
+        "metaphor": "Tracking every command given to your home’s smart devices.",
+        "translation": "The family records every command or instruction issued to their smart devices, helping them monitor and review how these devices are being used."
+    },
+    {
+        "subcategory": "8.9: Centralize Audit Logs",
+        "metaphor": "Keeping all your home records in one central place for easy review.",
+        "translation": "The family stores all their recorded activities and events (audit logs) in one central location, making it easier to monitor and analyze what’s happening in the home."
+    },
+    {
+        "subcategory": "8.10: Retain Audit Logs",
+        "metaphor": "Keeping your home diary for at least three months before deciding whether to archive or discard it.",
+        "translation": "The family ensures that all recorded activities and events (audit logs) are kept for a minimum of 90 days, providing a sufficient historical record for any necessary reviews or investigations."
+    },
+    {
+        "subcategory": "8.11: Conduct Audit Log Reviews",
+        "metaphor": "Regularly reviewing your home diary to spot any unusual or concerning events.",
+        "translation": "The family routinely reviews their recorded activities and events (audit logs) to identify any anomalies or incidents that could indicate a security issue."
+    },
+    {
+        "subcategory": "8.12: Collect Service Provider Logs",
+        "metaphor": "Keeping records of all services provided to your home, like repairs or deliveries.",
+        "translation": "The family records all interactions with service providers, such as repair services or deliveries, to ensure all activities are tracked and can be reviewed if needed."
+    },
+    {
+        "subcategory": "9.1: Ensure Use of Only Fully Supported Browsers and Email Clients",
+        "metaphor": "Using only the latest, safest locks on your doors and windows.",
+        "translation": "The family ensures they are using only the most current and secure tools (browsers and email clients) to protect their home from potential threats."
+    },
+    {
+        "subcategory": "9.2: Use DNS Filtering Services",
+        "metaphor": "Setting up a neighborhood watch to block unwanted visitors.",
+        "translation": "The family uses filtering services to block access to dangerous or unwanted websites, just as they would prevent unknown or suspicious people from entering their neighborhood."
+    },
+    {
+        "subcategory": "9.3: Maintain and Enforce Network-Based URL Filters",
+        "metaphor": "Putting up a fence around your home to keep out potential threats.",
+        "translation": "The family enforces rules that prevent access to potentially harmful or unapproved websites, similar to erecting a fence to keep unwanted elements out of their property."
+    },
+    {
+        "subcategory": "9.4: Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+        "metaphor": "Removing unnecessary gadgets from your home that could be used to break in.",
+        "translation": "The family removes or disables any unnecessary or unauthorized tools (browser and email extensions) that could be exploited to compromise their security."
+    },
+    {
+        "subcategory": "9.5: Implement DMARC",
+        "metaphor": "Installing caller ID to verify who is really calling your home.",
+        "translation": "The family uses verification tools to ensure that any emails claiming to be from trusted sources are genuine, just as they would use caller ID to verify the identity of a phone caller."
+    },
+    {
+        "subcategory": "9.6: Block Unnecessary File Types",
+        "metaphor": "Not allowing suspicious packages to be delivered to your home.",
+        "translation": "The family blocks the delivery of certain types of files (or packages) that could be harmful, ensuring that only safe and necessary items enter their home."
+    },
+    {
+        "subcategory": "9.7: Deploy and Maintain Email Server Anti-Malware Protections",
+        "metaphor": "Having a guard dog that checks all mail and packages before they enter your house.",
+        "translation": "The family uses anti-malware tools to scan all emails and attachments for threats, just as a guard dog would inspect all deliveries for potential dangers."
+    },
+    {
+        "subcategory": "10.1: Deploy and Maintain Anti-Malware Software",
+        "metaphor": "Setting up a security system to detect and stop intruders.",
+        "translation": "The family installs and maintains anti-malware software to detect and prevent malicious threats, just as they would install a home security system to protect against break-ins."
+    },
+    {
+        "subcategory": "10.2: Configure Automatic Anti-Malware Signature Updates",
+        "metaphor": "Regularly updating your security system to recognize new types of threats.",
+        "translation": "The family ensures their anti-malware software is always up to date by configuring automatic updates, just as they would update their home security system to detect new types of intruders."
+    },
+    {
+        "subcategory": "10.3: Disable Autorun and Autoplay for Removable Media",
+        "metaphor": "Preventing anyone from automatically opening your door without your permission.",
+        "translation": "The family disables automatic functions that could allow threats to enter their home without their knowledge, just as they would prevent doors from being opened automatically."
+    },
+    {
+        "subcategory": "10.4: Configure Automatic Anti-Malware Scanning of Removable Media",
+        "metaphor": "Inspecting every package that comes into your home for hidden dangers.",
+        "translation": "The family sets up their anti-malware software to automatically scan any removable media for threats, just as they would check every package delivered to their home."
+    },
+    {
+        "subcategory": "10.5: Enable Anti-Exploitation Features",
+        "metaphor": "Adding extra locks to doors to prevent burglars from picking them.",
+        "translation": "The family enables features that prevent the exploitation of vulnerabilities, just as they would add extra locks to their doors to make it harder for burglars to break in."
+    },
+    {
+        "subcategory": "10.6: Centrally Manage Anti-Malware Software",
+        "metaphor": "Having a central control panel for all the locks and alarms in your home.",
+        "translation": "The family manages all their anti-malware protections from a central location, ensuring that every device in the home is protected and monitored efficiently."
     },
     {
-        "subcategory": "ID.RA-02: Cyber threat intelligence is received from information sharing forums and sources.",
-        "metaphor": "Staying updated on local crime reports to protect your home.",
-        "translation": "The family keeps up with news about crime in the neighborhood to know if they need to take extra precautions to protect their home."
+        "subcategory": "10.7: Use Behavior-Based Anti-Malware Software",
+        "metaphor": "Training your security system to recognize suspicious behavior and take action.",
+        "translation": "The family uses anti-malware software that can detect and respond to suspicious behavior, just as they would train a security system to react to unusual activity in and around their home."
     },
     {
-        "subcategory": "ID.RA-03: Internal and external threats to the organization are identified and recorded.",
-        "metaphor": "Noticing potential dangers inside and outside your home, like a slippery floor or a neighbor’s aggressive dog.",
-        "translation": "The family identifies and keeps track of any risks, both inside the house and in the surrounding area, to ensure everyone stays safe."
+        "subcategory": "11.1: Establish and Maintain a Data Recovery Process",
+        "metaphor": "Creating a plan to rebuild your home in case of a disaster.",
+        "translation": "The family establishes a process to recover important data in case of a loss, just as they would create a plan to rebuild their home after a disaster."
     },
     {
-        "subcategory": "ID.RA-04: Potential impacts and likelihoods of threats exploiting vulnerabilities are identified and recorded.",
-        "metaphor": "Evaluating the risk of a fire starting from a frayed electrical cord.",
-        "translation": "The family assesses how likely it is that something bad will happen, like a fire from faulty wiring, and how serious the consequences would be."
+        "subcategory": "11.2: Perform Automated Backups",
+        "metaphor": "Regularly making copies of your family photos and important documents and storing them in a safe place.",
+        "translation": "The family ensures that backups of their important data are created automatically and regularly, so they can restore their information if something goes wrong."
     },
     {
-        "subcategory": "ID.RA-05: Threats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and inform risk response prioritization.",
-        "metaphor": "Deciding to fix a broken lock immediately because it could lead to a break-in.",
-        "translation": "The family prioritizes which issues to address based on how likely and severe the risks are, ensuring they tackle the most critical problems first."
+        "subcategory": "11.3: Protect Recovery Data",
+        "metaphor": "Storing backup copies of important documents in a fireproof safe.",
+        "translation": "The family protects their backup data with the same level of security as the original data, ensuring that it is safe from harm and accessible when needed."
     },
     {
-        "subcategory": "ID.RA-06: Risk responses are chosen, prioritized, planned, tracked, and communicated.",
-        "metaphor": "Creating a plan to address all the repairs needed in the house and keeping track of progress.",
-        "translation": "The family decides how to handle different risks, makes a plan to address them, and communicates who will take care of each task."
+        "subcategory": "11.4: Establish and Maintain an Isolated Instance of Recovery Data",
+        "metaphor": "Keeping a backup set of keys in a locked box away from your house.",
+        "translation": "The family maintains a separate, secure instance of their recovery data, just as they would keep a backup set of keys in a secure location away from their home."
     },
     {
-        "subcategory": "ID.RA-07: Changes and exceptions are managed, assessed for risk impact, recorded, and tracked.",
-        "metaphor": "Noting any changes in the house, like new furniture, and making sure it doesn’t create new risks.",
-        "translation": "The family keeps track of any changes in the home, like adding new furniture, and assesses if it introduces any new safety concerns."
+        "subcategory": "11.5: Test Data Recovery",
+        "metaphor": "Regularly checking that your spare keys still work.",
+        "translation": "The family regularly tests their backup and recovery processes to ensure that they can successfully restore their data when needed, just as they would check that their spare keys still work."
     },
     {
-        "subcategory": "ID.RA-08: Processes for receiving, analyzing, and responding to vulnerability disclosures are established.",
-        "metaphor": "Setting up a system for neighbors to alert you if they see something wrong with your house.",
-        "translation": "The family has a way to receive information about potential issues, like a neighbor noticing a broken window, and knows how to respond to those warnings."
+        "subcategory": "12.1: Ensure Network Infrastructure is Up-to-Date",
+        "metaphor": "Regularly inspecting and upgrading the wiring in your home.",
+        "translation": "The family ensures that their network infrastructure is always up-to-date by regularly reviewing and applying the latest updates, just as they would inspect and upgrade the wiring in their home to prevent electrical issues."
     },
     {
-        "subcategory": "ID.RA-09: The authenticity and integrity of hardware and software are assessed prior to acquisition and use.",
-        "metaphor": "Researching a product before buying it to ensure it’s high quality and safe.",
-        "translation": "The family checks reviews and verifies the quality of a product before purchasing it to make sure it’s reliable and safe to use in the home."
+        "subcategory": "12.2: Establish and Maintain a Secure Network Architecture",
+        "metaphor": "Designing your home layout to maximize safety and security.",
+        "translation": "The family establishes and maintains a secure design for their network, ensuring that the structure supports safe and secure operations, just as they would design their home layout with security in mind."
     },
     {
-        "subcategory": "ID.RA-10: Critical suppliers are assessed prior to acquisition.",
-        "metaphor": "Checking the credentials of a contractor before hiring them to work on your home.",
-        "translation": "The family ensures that anyone they hire for important work, like a contractor for home renovations, is trustworthy and capable."
+        "subcategory": "12.3: Securely Manage Network Infrastructure",
+        "metaphor": "Locking the control panel that manages your home’s security system.",
+        "translation": "The family manages their network infrastructure securely, ensuring that only authorized individuals have access to make changes, just as they would lock the control panel for their home’s security system."
     },
-   {
-        "subcategory": "ID.IM-01: Improvements are identified from evaluations.",
-        "metaphor": "After a family meeting, deciding on ways to make the home safer.",
-        "translation": "The family regularly evaluates how well things are going at home and makes decisions on how to improve safety and efficiency."
+    {
+        "subcategory": "12.4: Establish and Maintain Architecture Diagram(s)",
+        "metaphor": "Drawing a detailed map of your home’s layout, including wiring and plumbing.",
+        "translation": "The family maintains detailed diagrams and documentation of their network’s architecture, ensuring they have a clear understanding of how everything is connected, just as they would have a map of their home’s layout."
+    },
+    {
+        "subcategory": "12.5: Centralize Network Authentication, Authorization, and Auditing (AAA)",
+        "metaphor": "Using a master key to control access to all the locks in your house.",
+        "translation": "The family centralizes the management of network access and controls, ensuring that all authentication and authorization are managed from a single point, just as they would use a master key to manage all the locks in their home."
     },
     {
-        "subcategory": "ID.IM-02: Improvements are identified from security tests and exercises, including those done in coordination with suppliers and relevant third parties.",
-        "metaphor": "Conducting a fire drill with the family and making adjustments based on the results.",
-        "translation": "The family practices emergency procedures and makes improvements based on how well they perform during the drill."
+        "subcategory": "12.6: Use Secure Network Management and Communication Protocols",
+        "metaphor": "Communicating with family members using encrypted messages that only they can understand.",
+        "translation": "The family uses secure communication protocols to manage their network and ensure that all data exchanges are protected, just as they would use encrypted messages to communicate securely with family members."
     },
     {
-        "subcategory": "ID.IM-03: Improvements are identified from execution of operational processes, procedures, and activities.",
-        "metaphor": "Noticing that the new way of organizing the kitchen is more efficient and deciding to keep it that way.",
-        "translation": "The family identifies improvements based on how well things are working in the home and makes adjustments to keep things running smoothly."
+        "subcategory": "12.7: Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise’s AAA Infrastructure",
+        "metaphor": "Ensuring that any remote workers or visitors check in through a secure gate before entering your home.",
+        "translation": "The family ensures that any devices connecting remotely to their network go through a secure verification process, similar to how visitors must check in at a secure gate before entering the property."
     },
     {
-        "subcategory": "ID.IM-04: Incident response plans and other cybersecurity plans that affect operations are established, communicated, maintained, and improved.",
-        "metaphor": "Creating, sharing, and updating an emergency plan for the family.",
-        "translation": "The family establishes and regularly updates a plan for emergencies, making sure everyone knows what to do if something goes wrong."
+        "subcategory": "12.8: Establish and Maintain Dedicated Computing Resources for All Administrative Work",
+        "metaphor": "Having a separate, secure office for important family documents and decisions.",
+        "translation": "The family uses dedicated, secure devices for sensitive administrative tasks, just as they would keep important documents and decisions confined to a secure office in the home."
     },
     {
-        "subcategory": "PR.AA-01: Identities and credentials for authorized users, services, and hardware are managed by the organization.",
-        "metaphor": "Keeping track of who has keys to your home.",
-        "translation": "The family manages and tracks who has keys to the house, ensuring that only trusted people can enter."
+        "subcategory": "13.1: Centralize Security Event Alerting",
+        "metaphor": "Setting up a central alarm system that alerts you to any unusual activity in the house.",
+        "translation": "The family centralizes all security alerts to ensure they are notified immediately of any suspicious activity, just as they would use a central alarm system to monitor their home."
     },
     {
-        "subcategory": "PR.AA-02: Identities are proofed and bound to credentials based on the context of interactions.",
-        "metaphor": "Verifying someone’s identity before giving them a spare key.",
-        "translation": "Before giving someone a spare key, the family confirms their identity, making sure they’re trustworthy."
+        "subcategory": "13.2: Deploy a Host-Based Intrusion Detection Solution",
+        "metaphor": "Installing motion detectors in each room of your house.",
+        "translation": "The family installs intrusion detection software on individual devices to monitor for unusual activity, similar to how they would use motion detectors to detect movement in each room."
     },
     {
-        "subcategory": "PR.AA-03: Users, services, and hardware are authenticated.",
-        "metaphor": "Checking ID before letting someone into your home.",
-        "translation": "The family always verifies that someone is who they say they are before allowing them into the house."
+        "subcategory": "13.3: Deploy a Network Intrusion Detection Solution",
+        "metaphor": "Installing security cameras around the perimeter of your home.",
+        "translation": "The family uses network-based intrusion detection to monitor for threats across the entire network, just as they would install security cameras to watch the perimeter of their home."
     },
     {
-        "subcategory": "PR.AA-04: Identity assertions are protected, conveyed, and verified.",
-        "metaphor": "Making sure a person’s ID is secure and verified when they enter your home.",
-        "translation": "The family ensures that any identification used to enter the home is securely handled and verified each time."
+        "subcategory": "13.4: Perform Traffic Filtering Between Network Segments",
+        "metaphor": "Using different keys for different rooms in your house to control who can access them.",
+        "translation": "The family filters network traffic between different segments to control access, similar to how they would use different keys to restrict access to certain rooms in the house."
     },
     {
-        "subcategory": "PR.AA-05: Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties.",
-        "metaphor": "Setting house rules for who can access different parts of the home.",
-        "translation": "The family sets rules about who is allowed in certain areas of the house, ensuring that access is limited to those who need it."
+        "subcategory": "13.5: Manage Access Control for Remote Assets",
+        "metaphor": "Only allowing family members with proper ID to access certain parts of the house when they're away.",
+        "translation": "The family ensures that only authorized devices can access the network remotely, similar to requiring proper identification for family members to access restricted areas when they're not home."
     },
     {
-        "subcategory": "PR.AA-06: Physical access to assets is managed, monitored, and enforced commensurate with risk.",
-        "metaphor": "Locking and monitoring access to valuable items in the home.",
-        "translation": "The family locks up valuable items and keeps an eye on who accesses them to prevent theft or damage."
+        "subcategory": "13.6: Collect Network Traffic Flow Logs",
+        "metaphor": "Keeping a detailed record of who comes and goes from your house.",
+        "translation": "The family logs network traffic to monitor and review activities, just as they would keep a record of everyone who enters and exits their home."
     },
     {
-        "subcategory": "PR.AT-01: Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind.",
-        "metaphor": "Teaching everyone in the family how to safely use the stove.",
-        "translation": "The family makes sure everyone knows how to safely perform basic tasks in the home, like using the stove, to prevent accidents."
+        "subcategory": "13.7: Deploy a Host-Based Intrusion Prevention Solution",
+        "metaphor": "Setting up automatic locks on your doors that engage if someone tries to break in.",
+        "translation": "The family uses intrusion prevention tools on their devices to automatically block malicious activities, similar to having doors that lock automatically if someone attempts to break in."
     },
     {
-        "subcategory": "PR.AT-02: Individuals in specialized roles are provided with awareness and training so that they possess the knowledge and skills to perform relevant tasks with cybersecurity risks in mind.",
-        "metaphor": "Training one family member to handle emergency repairs.",
-        "translation": "The family ensures that the person responsible for emergency repairs knows exactly what to do, so they can respond quickly and effectively."
+        "subcategory": "13.8: Deploy a Network Intrusion Prevention Solution",
+        "metaphor": "Installing a security fence that stops intruders before they reach your house.",
+        "translation": "The family uses network-based intrusion prevention to block threats before they can affect the network, just as they would install a security fence to stop intruders before they reach their home."
     },
     {
-        "subcategory": "PR.DS-01: The confidentiality, integrity, and availability of data-at-rest are protected.",
-        "metaphor": "Keeping important documents locked in a safe.",
-        "translation": "The family stores important documents, like birth certificates, in a safe to protect them from damage or theft."
+        "subcategory": "13.9: Deploy Port-Level Access Control",
+        "metaphor": "Locking certain doors and windows to prevent unauthorized entry.",
+        "translation": "The family controls access to specific network ports to prevent unauthorized access, similar to locking certain doors and windows in their home."
     },
     {
-        "subcategory": "PR.DS-02: The confidentiality, integrity, and availability of data-in-transit are protected.",
-        "metaphor": "Ensuring that your mail is secure while being delivered.",
-        "translation": "The family makes sure that any important letters or packages sent through the mail are secure and won’t be tampered with."
+        "subcategory": "13.10: Perform Application Layer Filtering",
+        "metaphor": "Installing a screen door to filter out bugs while still letting in fresh air.",
+        "translation": "The family uses application layer filtering to block harmful content while allowing safe and necessary traffic through, just as a screen door keeps bugs out while letting fresh air in."
     },
     {
-        "subcategory": "PR.DS-10: The confidentiality, integrity, and availability of data-in-use are protected.",
-        "metaphor": "Keeping your personal information safe while you’re working on your computer.",
-        "translation": "The family ensures that personal information is protected while they are using it, like when typing passwords or accessing bank accounts online."
+        "subcategory": "13.11: Tune Security Event Alerting Thresholds",
+        "metaphor": "Adjusting your home security system to reduce false alarms while still catching real threats.",
+        "translation": "The family fine-tunes their security alert system to minimize false positives and ensure real threats are detected, just as they would adjust their home security system to reduce unnecessary alarms."
     },
     {
-        "subcategory": "PR.DS-11: Backups of data are created, protected, maintained, and tested.",
-        "metaphor": "Making copies of important documents and storing them in a safe place.",
-        "translation": "The family keeps backups of important documents, like wills and insurance papers, in case the originals are lost or damaged."
+        "subcategory": "14.1: Establish and Maintain a Security Awareness Program",
+        "metaphor": "Teaching your family the importance of locking doors and windows before leaving the house.",
+        "translation": "The family establishes a program to educate everyone about security practices, ensuring they understand the importance of protecting their home, just as they would teach them to lock up before leaving."
     },
     {
-        "subcategory": "PR.PS-01: Configuration management practices are established and applied.",
-        "metaphor": "Keeping the settings on your home security system up to date.",
-        "translation": "The family ensures that the home security system is properly configured and updated to keep the house safe."
+        "subcategory": "14.2: Train Workforce Members to Recognize Social Engineering Attacks",
+        "metaphor": "Teaching your family to recognize when someone is pretending to be a friend to gain access to your home.",
+        "translation": "The family trains everyone to recognize and respond to social engineering tactics, just as they would teach them to spot someone pretending to be a friend to gain access to their house."
     },
     {
-        "subcategory": "PR.PS-02: Software is maintained, replaced, and removed commensurate with risk.",
-        "metaphor": "Updating or removing old apps on your family’s devices.",
-        "translation": "The family regularly updates the software on their devices and removes any that are no longer needed or could be a security risk."
+        "subcategory": "14.3: Train Workforce Members on Authentication Best Practices",
+        "metaphor": "Teaching your family to use strong, unique keys for each door in the house.",
+        "translation": "The family trains everyone on the best practices for creating and managing secure passwords and authentication methods, just as they would ensure each door in the house has a strong, unique key."
     },
     {
-        "subcategory": "PR.PS-03: Hardware is maintained, replaced, and removed commensurate with risk.",
-        "metaphor": "Replacing old appliances when they start to become a safety hazard.",
-        "translation": "The family replaces old or faulty appliances, like a malfunctioning microwave, to prevent potential hazards."
+        "subcategory": "14.4: Train Workforce on Data Handling Best Practices",
+        "metaphor": "Teaching your family how to safely store and dispose of important documents.",
+        "translation": "The family educates everyone on how to handle sensitive data properly, including storage and disposal, just as they would teach them how to manage important documents securely."
     },
     {
-        "subcategory": "PR.PS-04: Log records are generated and made available for continuous monitoring.",
-        "metaphor": "Keeping a diary of daily activities and checking it regularly.",
-        "translation": "The family keeps track of important activities, like who enters the house, and regularly reviews the records to ensure everything is in order."
+        "subcategory": "14.5: Train Workforce Members on Causes of Unintentional Data Exposure",
+        "metaphor": "Making sure everyone in the house knows not to leave the front door open by accident.",
+        "translation": "The family trains everyone to avoid unintentional data exposure by understanding the risks and taking precautions, just as they would ensure no one leaves the front door open by mistake."
     },
-{
-        "subcategory": "PR.PS-05: Installation and execution of unauthorized software are prevented.",
-        "metaphor": "Making sure no one installs unapproved apps on the family computer.",
-        "translation": "The family ensures that only approved software is installed on their devices to prevent security risks."
+    {
+        "subcategory": "14.6: Train Workforce Members on Recognizing and Reporting Security Incidents",
+        "metaphor": "Teaching your family how to recognize a break-in and report it immediately.",
+        "translation": "The family trains everyone to recognize signs of a security incident and report it promptly, just as they would teach them to notice and report a break-in."
     },
     {
-        "subcategory": "PR.PS-06: Secure software development practices are integrated, and their performance is monitored throughout the software development life cycle.",
-        "metaphor": "Building a treehouse and making sure it’s safe for the kids to play in at every stage of construction.",
-        "translation": "The family follows best practices when building something new, like a treehouse, and checks at each stage to ensure it’s safe."
+        "subcategory": "14.7: Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates",
+        "metaphor": "Teaching your family to notice if the home security system isn’t working properly and report it.",
+        "translation": "The family ensures everyone knows how to check for and report missing updates on their devices, just as they would ensure the home security system is functioning correctly."
     },
     {
-        "subcategory": "PR.IR-01: Networks and environments are protected from unauthorized logical access and usage.",
-        "metaphor": "Setting up a home Wi-Fi password and only sharing it with family members.",
-        "translation": "The family ensures that their Wi-Fi network is secure by using a strong password and only allowing trusted people to access it."
+        "subcategory": "14.8: Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks",
+        "metaphor": "Warning your family not to share sensitive information over a public phone line.",
+        "translation": "The family educates everyone about the dangers of using insecure networks to transmit sensitive data, just as they would warn against sharing private information over a public phone line."
     },
     {
-        "subcategory": "PR.IR-02: The organization's technology assets are protected from environmental threats.",
-        "metaphor": "Installing surge protectors to protect your electronics during a storm.",
-        "translation": "The family protects their electronics from damage by using surge protectors during storms."
+        "subcategory": "14.9: Conduct Role-Specific Security Awareness and Skills Training",
+        "metaphor": "Teaching different family members specific skills, like how to manage the alarm system or handle emergency repairs.",
+        "translation": "The family provides specialized security training to each member based on their role and responsibilities, similar to how they would teach specific family members to handle the alarm system or emergency repairs."
     },
     {
-        "subcategory": "PR.IR-03: Mechanisms are implemented to achieve resilience requirements in normal and adverse situations.",
-        "metaphor": "Having a generator ready in case of a power outage.",
-        "translation": "The family prepares for emergencies by having a backup power source, like a generator, to keep things running if the electricity goes out."
+        "subcategory": "15.1: Establish and Maintain an Inventory of Service Providers",
+        "metaphor": "Keeping a list of all the trusted service providers you use for home repairs.",
+        "translation": "The family maintains a detailed inventory of all service providers who have access to their home, just as they would keep a list of trusted repair services."
     },
     {
-        "subcategory": "PR.IR-04: Adequate resource capacity to ensure availability is maintained.",
-        "metaphor": "Keeping enough supplies on hand to last through a storm.",
-        "translation": "The family makes sure they have enough food, water, and other essentials to last through a storm or other emergency."
+        "subcategory": "15.2: Establish and Maintain a Service Provider Management Policy",
+        "metaphor": "Setting rules for how and when service providers can access your home.",
+        "translation": "The family creates and maintains a policy that outlines how service providers should be managed and monitored, just as they would establish rules for when and how repairmen can enter their home."
     },
     {
-        "subcategory": "DE.CM-01: Networks and network services are monitored to find potentially adverse events.",
-        "metaphor": "Watching security cameras to spot any intruders.",
-        "translation": "The family keeps an eye on security cameras to catch any suspicious activity around the house."
+        "subcategory": "15.4: Ensure Service Provider Contracts Include Security Requirements",
+        "metaphor": "Making sure your contractor agrees to follow your house rules before starting any work.",
+        "translation": "The family ensures that all agreements with service providers include specific security requirements, just as they would make sure a contractor agrees to follow the house rules before starting any work."
     },
     {
-        "subcategory": "DE.CM-02: The physical environment is monitored to find potentially adverse events.",
-        "metaphor": "Checking for unusual sounds or smells in the house.",
-        "translation": "The family pays attention to any unusual sounds or smells in the house that could indicate a problem, like a gas leak or an intruder."
+        "subcategory": "15.5: Assess Service Providers",
+        "metaphor": "Checking references and reviews before hiring someone to work on your house.",
+        "translation": "The family regularly assesses their service providers to ensure they meet the necessary standards, just as they would check references and reviews before hiring someone to work on their home."
     },
     {
-        "subcategory": "DE.CM-03: Personnel activity and technology usage are monitored to find potentially adverse events.",
-        "metaphor": "Keeping track of who is using the computer and what they are doing.",
-        "translation": "The family monitors computer usage to make sure no one is doing anything risky, like visiting dangerous websites."
+        "subcategory": "15.6: Monitor Service Providers",
+        "metaphor": "Keeping an eye on workers while they’re doing repairs in your home.",
+        "translation": "The family monitors the activities of their service providers to ensure they continue to meet expectations, just as they would supervise workers while they’re doing repairs."
     },
     {
-        "subcategory": "DE.CM-06: External service provider activities and services are monitored to find potentially adverse events.",
-        "metaphor": "Keeping an eye on the work done by contractors or service providers in your home.",
-        "translation": "The family monitors the work done by external service providers, like plumbers or electricians, to ensure everything is done safely and correctly."
+        "subcategory": "15.7: Securely Decommission Service Providers",
+        "metaphor": "Changing the locks after a service provider finishes work at your house.",
+        "translation": "The family ensures that all access is securely removed and any related information is disposed of properly when a service provider is no longer needed, just as they would change the locks after a contractor finishes work."
     },
     {
-        "subcategory": "DE.CM-09: Computing hardware and software, runtime environments, and their data are monitored to find potentially adverse events.",
-        "metaphor": "Regularly checking your home computer for viruses or malware.",
-        "translation": "The family monitors their computers and devices to make sure they are not infected with viruses or malware."
+        "subcategory": "16.1: Establish and Maintain a Secure Application Development Process",
+        "metaphor": "Creating a blueprint and building plan to ensure your new house is safe from the start.",
+        "translation": "The family establishes a secure process for developing new software applications, just as they would carefully plan and build a house to ensure it’s safe from the ground up."
     },
     {
-        "subcategory": "DE.AE-02: Potentially adverse events are analyzed to better understand associated activities.",
-        "metaphor": "Investigating a strange noise in the middle of the night to figure out what caused it.",
-        "translation": "The family investigates any strange occurrences in the house, like noises at night, to understand what happened and whether it’s a threat."
+        "subcategory": "16.2: Establish and Maintain a Process to Accept and Address Software Vulnerabilities",
+        "metaphor": "Having a process for identifying and fixing weak spots in your home’s security.",
+        "translation": "The family maintains a process to identify and address vulnerabilities in their software, just as they would have a plan to identify and fix weak spots in their home’s security."
     },
     {
-        "subcategory": "DE.AE-03: Information is correlated from multiple sources.",
-        "metaphor": "Gathering information from different family members to get a complete picture of what happened.",
-        "translation": "The family collects input from everyone to piece together what’s going on, like if multiple people heard the same strange noise."
+        "subcategory": "16.3: Perform Root Cause Analysis on Security Vulnerabilities",
+        "metaphor": "Finding out why a door was easy to break into and fixing the underlying issue, not just the door itself.",
+        "translation": "The family investigates the root causes of security vulnerabilities to prevent them from recurring, just as they would figure out why a door was easily broken into and fix the underlying problem."
     },
     {
-        "subcategory": "DE.AE-04: The estimated impact and scope of adverse events are understood.",
-        "metaphor": "Assessing how much damage a storm has caused to your home.",
-        "translation": "The family evaluates the extent of damage after a storm to understand how bad the situation is and what needs to be fixed."
+        "subcategory": "16.4: Establish and Manage an Inventory of Third-Party Software Components",
+        "metaphor": "Keeping a list of all the materials used to build your house and checking their quality regularly.",
+        "translation": "The family maintains an inventory of all third-party software components they use and regularly checks their quality, just as they would keep track of all building materials used in their home."
     },
     {
-        "subcategory": "DE.AE-06: Information on adverse events is provided to authorized staff and tools.",
-        "metaphor": "Sharing details about a home repair issue with the contractor.",
-        "translation": "The family communicates important details about a problem, like a leak, to the person who will fix it."
+        "subcategory": "16.5: Use Up-to-Date and Trusted Third-Party Software Components",
+        "metaphor": "Only using high-quality, up-to-date materials when making home improvements.",
+        "translation": "The family ensures that all third-party software components are trustworthy and up-to-date, just as they would only use high-quality materials for home improvements."
     },
     {
-        "subcategory": "DE.AE-07: Cyber threat intelligence and other contextual information are integrated into the analysis.",
-        "metaphor": "Using local news reports to understand why there have been more break-ins recently.",
-        "translation": "The family uses information from the news or other sources to understand broader issues that might affect their safety."
+        "subcategory": "16.6: Establish and Maintain a Severity Rating System and Process for Application Vulnerabilities",
+        "metaphor": "Ranking home repairs by importance and urgency.",
+        "translation": "The family creates a system to prioritize the fixing of software vulnerabilities, similar to how they would rank home repairs by importance and urgency."
     },
     {
-        "subcategory": "DE.AE-08: Incidents are declared when adverse events meet the defined incident criteria.",
-        "metaphor": "Deciding to call the police when you hear a window break.",
-        "translation": "The family declares an emergency, like calling the police, when a situation meets their criteria for a serious threat."
+        "subcategory": "16.7: Use Standard Hardening Configuration Templates for Application Infrastructure",
+        "metaphor": "Following a proven construction plan to ensure your home is sturdy and secure.",
+        "translation": "The family uses standardized templates to secure their application infrastructure, just as they would follow a proven construction plan to build a sturdy and secure home."
     },
     {
-        "subcategory": "RS.MA-01: The incident response plan is executed in coordination with relevant third parties once an incident is declared.",
-        "metaphor": "Calling the fire department when the smoke alarm goes off.",
-        "translation": "The family follows their emergency plan and contacts the necessary professionals, like the fire department, when a problem arises."
+        "subcategory": "16.8: Separate Production and Non-Production Systems",
+        "metaphor": "Keeping your toolshed separate from your living space.",
+        "translation": "The family keeps their production and non-production environments separate, just as they would keep their toolshed separate from their living areas."
     },
     {
-        "subcategory": "RS.MA-02: Incident reports are triaged and validated.",
-        "metaphor": "Determining whether a reported problem, like a suspected gas leak, is real or a false alarm.",
-        "translation": "The family checks whether a reported issue is actually a problem, like smelling for gas to confirm a leak."
+        "subcategory": "16.9: Train Developers in Application Security Concepts and Secure Coding",
+        "metaphor": "Teaching your builders the best practices for constructing a safe and secure home.",
+        "translation": "The family ensures that their developers are trained in secure coding and application security, just as they would teach builders the best practices for constructing a safe home."
     },
     {
-        "subcategory": "RS.MA-03: Incidents are categorized and prioritized.",
-        "metaphor": "Deciding whether a problem, like a broken window or a clogged drain, needs immediate attention or can wait.",
-        "translation": "The family ranks issues by importance, like fixing a broken window immediately while a clogged drain might wait until morning."
+        "subcategory": "16.10: Apply Secure Design Principles in Application Architectures",
+        "metaphor": "Designing your home with safety in mind, like placing fire extinguishers and emergency exits in key locations.",
+        "translation": "The family applies secure design principles to their software architectures, just as they would design their home to include safety features like fire extinguishers and emergency exits."
     },
     {
-        "subcategory": "RS.MA-04: Incidents are escalated or elevated as needed.",
-        "metaphor": "Calling in a professional if a DIY repair turns out to be too difficult.",
-        "translation": "The family decides when to bring in professional help, like calling a plumber if a home repair is beyond their skills."
+        "subcategory": "16.11: Leverage Vetted Modules or Services for Application Security Components",
+        "metaphor": "Using pre-approved, reliable materials when building your home to ensure it’s safe.",
+        "translation": "The family uses trusted and vetted modules for critical security components in their applications, just as they would use reliable materials when building their home."
     },
     {
-        "subcategory": "RS.MA-05: The criteria for initiating incident recovery are applied.",
-        "metaphor": "Starting the cleanup after a storm once it’s safe.",
-        "translation": "The family begins repairs or recovery, like cleaning up after a storm, once they determine it’s safe to do so."
+        "subcategory": "16.12: Implement Code-Level Security Checks",
+        "metaphor": "Inspecting every brick as your house is built to ensure none are cracked or weak.",
+        "translation": "The family uses code-level security checks throughout the development process to catch vulnerabilities early, just as they would inspect every brick during construction to ensure quality."
     },
     {
-        "subcategory": "RS.AN-03: Analysis is performed to establish what has taken place during an incident and the root cause of the incident.",
-        "metaphor": "Figuring out why the power went out by checking the breaker and talking to neighbors.",
-        "translation": "The family investigates to understand what caused a problem, like why the power went out, so they can fix it."
+        "subcategory": "16.13: Conduct Application Penetration Testing",
+        "metaphor": "Hiring a security expert to try breaking into your home to find weak points.",
+        "translation": "The family conducts penetration testing on their applications to identify vulnerabilities, just as they would hire a security expert to test the security of their home."
     },
     {
-        "subcategory": "RS.AN-06: Actions performed during an investigation are recorded, and the records' integrity and provenance are preserved.",
-        "metaphor": "Keeping notes of what you checked and did when trying to fix a home issue.",
-        "translation": "The family keeps a record of what steps they took when investigating a problem, like writing down what they checked when the power went out."
+        "subcategory": "16.14: Conduct Threat Modeling",
+        "metaphor": "Planning for potential break-ins by identifying the weakest points in your home’s layout.",
+        "translation": "The family conducts threat modeling to identify and mitigate potential risks in their software designs, just as they would plan for possible break-ins by identifying weak points in their home’s layout."
     },
     {
-        "subcategory": "RS.AN-07: Incident data and metadata are collected, and their integrity and provenance are preserved.",
-        "metaphor": "Documenting the damage after a storm to report to insurance.",
-        "translation": "The family collects and keeps accurate records of what happened during an incident, like taking photos of storm damage for insurance."
+        "subcategory": "17.1: Designate Personnel to Manage Incident Handling",
+        "metaphor": "Assigning a family member to be in charge during an emergency.",
+        "translation": "The family designates specific individuals to manage incident response, just as they would assign someone to take charge during an emergency."
     },
     {
-        "subcategory": "RS.AN-08: An incident's magnitude is estimated and validated.",
-        "metaphor": "Assessing how much damage a burst pipe has caused.",
-        "translation": "The family evaluates how serious a problem is, like determining the extent of water damage from a burst pipe."
+        "subcategory": "17.2: Establish and Maintain Contact Information for Reporting Security Incidents",
+        "metaphor": "Keeping a list of emergency contacts on the fridge for everyone to see.",
+        "translation": "The family keeps an updated list of contacts for reporting security incidents, just as they would maintain a list of emergency contacts in a visible place."
     },
     {
-        "subcategory": "RS.CO-02: Internal and external stakeholders are notified of incidents.",
-        "metaphor": "Calling the neighbors to warn them about a fire in your house.",
-        "translation": "The family alerts anyone who needs to know about an emergency, like calling the neighbors during a fire."
+        "subcategory": "17.3: Establish and Maintain an Enterprise Process for Reporting Incidents",
+        "metaphor": "Setting up a family plan for how to report emergencies, like a fire or break-in.",
+        "translation": "The family establishes a clear process for reporting security incidents within the organization, just as they would create a plan for reporting emergencies at home."
     },
     {
-        "subcategory": "RS.CO-03: Information is shared with designated internal and external stakeholders.",
-        "metaphor": "Sharing information about a security issue with your home insurance company.",
-        "translation": "The family provides necessary information to those who need it, like telling the insurance company about a break-in."
+        "subcategory": "17.4: Establish and Maintain an Incident Response Process",
+        "metaphor": "Creating a step-by-step plan for how to respond if there’s a break-in at your house.",
+        "translation": "The family establishes a detailed process for responding to security incidents, just as they would create a plan for how to handle a break-in."
     },
     {
-        "subcategory": "RS.MI-01: Incidents are contained.",
-        "metaphor": "Closing a door to keep smoke from spreading during a fire.",
-        "translation": "The family takes steps to stop a problem from getting worse, like closing a door to contain smoke during a fire."
+        "subcategory": "17.5: Assign Key Roles and Responsibilities",
+        "metaphor": "Assigning each family member a specific role during an emergency, like who calls the police or checks on the kids.",
+        "translation": "The family assigns specific roles and responsibilities for responding to incidents, just as they would decide who does what during a home emergency."
     },
     {
-        "subcategory": "RS.MI-02: Incidents are eradicated.",
-        "metaphor": "Putting out a fire in the kitchen.",
-        "translation": "The family completely resolves the problem, like putting out a fire to ensure it doesn’t spread."
+        "subcategory": "17.6: Define Mechanisms for Communicating During Incident Response",
+        "metaphor": "Agreeing on how to communicate with each other during an emergency, like using walkie-talkies or a group chat.",
+        "translation": "The family decides on the best ways to communicate during an incident, just as they would choose how to stay in touch during a home emergency."
     },
     {
-        "subcategory": "RC.RP-01: The recovery portion of the incident response plan is executed once initiated from the incident response process.",
-        "metaphor": "Starting repairs after the fire is out.",
-        "translation": "The family begins fixing the damage, like starting home repairs after a fire has been extinguished."
+        "subcategory": "17.7: Conduct Routine Incident Response Exercises",
+        "metaphor": "Practicing fire drills with your family to make sure everyone knows what to do.",
+        "translation": "The family regularly practices incident response scenarios to ensure everyone knows their role, just as they would practice fire drills at home."
     },
     {
-        "subcategory": "RC.RP-02: Recovery actions are selected, scoped, prioritized, and performed.",
-        "metaphor": "Deciding which repairs to do first after a storm.",
-        "translation": "The family prioritizes and begins the necessary repairs, like deciding to fix the roof before repainting after a storm."
+        "subcategory": "17.8: Conduct Post-Incident Reviews",
+        "metaphor": "Talking about what went right and wrong after an emergency drill to improve next time.",
+        "translation": "The family discusses what worked and what didn’t after an incident, just as they would review the outcomes of an emergency drill to improve their response for the future."
     },
     {
-        "subcategory": "RC.RP-03: The integrity of backups and other restoration assets is verified before using them for restoration.",
-        "metaphor": "Checking that your emergency supplies are still good before using them.",
-        "translation": "The family checks that backup supplies or resources are still usable before relying on them, like making sure stored water is safe to drink."
+        "subcategory": "17.9: Establish and Maintain Security Incident Thresholds",
+        "metaphor": "Setting criteria for when to call the police versus when to handle a situation yourself.",
+        "translation": "The family establishes clear guidelines to determine when a security issue is severe enough to escalate, just as they would decide when an issue at home requires outside help versus handling it themselves."
     },
     {
-        "subcategory": "RC.RP-04: Critical mission functions and cybersecurity risk management are considered to establish post-incident operational norms.",
-        "metaphor": "Adjusting your home safety plan after an emergency to prevent future problems.",
-        "translation": "The family updates their safety routines after an emergency to ensure they are better prepared for the future."
+        "subcategory": "18.1: Establish and Maintain a Penetration Testing Program",
+        "metaphor": "Regularly hiring a security expert to try breaking into your house to find weak spots.",
+        "translation": "The family sets up a routine for testing the security of their systems by simulating attacks, just as they would regularly hire a security expert to test their home’s defenses."
     },
     {
-        "subcategory": "RC.RP-05: The integrity of restored assets is verified, systems and services are restored, and normal operating status is confirmed.",
-        "metaphor": "Making sure everything works properly after repairs are completed.",
-        "translation": "The family checks that all repairs were done correctly and that the home is safe and functional again."
+        "subcategory": "18.2: Perform Periodic External Penetration Tests",
+        "metaphor": "Getting an outsider to try and break into your house to see if your security measures hold up.",
+        "translation": "The family conducts regular penetration tests from an external perspective to uncover vulnerabilities, just as they would have an outsider test their home security."
     },
     {
-        "subcategory": "RC.RP-06: The end of incident recovery is declared based on criteria, and incident-related documentation is completed.",
-        "metaphor": "Declaring the home safe to live in again after renovations.",
-        "translation": "The family officially considers the home restored after ensuring everything is back to normal and documenting the process."
+        "subcategory": "18.3: Remediate Penetration Test Findings",
+        "metaphor": "Fixing any weak spots found in your home’s defenses after a security test.",
+        "translation": "The family addresses any vulnerabilities discovered during penetration testing, just as they would repair weak spots in their home’s security after a test."
     },
     {
-        "subcategory": "RC.CO-03: Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders.",
-        "metaphor": "Updating family members and contractors on the progress of home repairs.",
-        "translation": "The family keeps everyone informed about the status of repairs, like updating each other and any contractors involved."
+        "subcategory": "18.4: Validate Security Measures",
+        "metaphor": "Double-checking that all the locks and alarms work after making improvements to your home’s security.",
+        "translation": "The family verifies that all security measures are effective after changes are made, just as they would ensure all locks and alarms are functioning properly after an upgrade."
     },
     {
-        "subcategory": "RC.CO-04: Public updates on incident recovery are shared using approved methods and messaging.",
-        "metaphor": "Posting a sign outside your house to inform neighbors that repairs are ongoing.",
-        "translation": "The family shares updates with the public, like letting the neighbors know that the house is under repair, using clear and approved communication methods."
+        "subcategory": "18.5: Perform Periodic Internal Penetration Tests",
+        "metaphor": "Testing your home security from the inside to make sure everything is secure even if someone gets in.",
+        "translation": "The family regularly tests their security measures from within the organization to ensure internal defenses are strong, just as they would check their home’s security from the inside."
     }
-];
+]
+
 
 //API
 document.addEventListener('DOMContentLoaded', () => {
